@@ -1,0 +1,2 @@
+#define osal-linux_VERSION_MAJOR @osal-linux_VERSION_MAJOR@
+#define osal-linux_VERSION_MINOR @osal-linux_VERSION_MINOR@
