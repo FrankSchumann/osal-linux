@@ -1,2 +1,2 @@
 # osal-linux
-Operating System Abstraction Layer
+Operating System Abstraction Layer for Linux
