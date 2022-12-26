@@ -1,0 +1,3 @@
+[submodule "include/copa-pdk"]
+	path = include/copa-pdk
+	url = git@github.com:FrankSchumann/copa-pdk.git
