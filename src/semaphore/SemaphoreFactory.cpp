@@ -8,10 +8,6 @@ SemaphoreFactory::SemaphoreFactory()
 {
 }
 
-SemaphoreFactory::~SemaphoreFactory()
-{
-}
-
 std::shared_ptr< SemaphoreIf > SemaphoreFactory::create() const
 {
     return std::make_shared< Semaphore >();
