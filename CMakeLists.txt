@@ -19,7 +19,6 @@ configure_file( config.h.in config.h )
 
 include_directories( "${PROJECT_BINARY_DIR}" include )
 
-#set_target_properties( ${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${PROJECT_INCLUDE_FILES}" )
 install( TARGETS ${PROJECT_NAME} )
 install( DIRECTORY include/ DESTINATION include )
 
