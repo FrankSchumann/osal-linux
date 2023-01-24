@@ -1,20 +1,25 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required( VERSION 3.15 )
 
 # Set some basic project attributes
-project (Osal
+project (osal
 		VERSION 0.0.0.2
 		DESCRIPTION "OSAL Linux")
 		
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_STANDARD 17)
+set( CMAKE_BUILD_TYPE Debug )
+set( CMAKE_CXX_STANDARD 17 )
 
-file(GLOB SOURCES "src/*/*.cpp")
+file( GLOB_RECURSE PROJECT_SOURCE_FILES "src/*.cpp" )
 
-add_library(${PROJECT_NAME} SHARED ${SOURCES})
+file( GLOB_RECURSE PROJECT_INCLUDE_FILES "include/*.h" )
+
+add_library( ${PROJECT_NAME} ${PROJECT_INCLUDE_FILES} ${PROJECT_SOURCE_FILES} )
 
 # Create a simple configuration header
-configure_file(config.h.in config.h)
+configure_file( config.h.in config.h )
 
-include_directories("${PROJECT_BINARY_DIR}" include)
+include_directories( "${PROJECT_BINARY_DIR}" include )
 
-message("CMAKE_PROJECT_VERSION = ${CMAKE_PROJECT_VERSION}")
+set_target_properties( ${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${PROJECT_INCLUDE_FILES}" )
+install( TARGETS ${PROJECT_NAME} )
+
+message( "CMAKE_PROJECT_VERSION = ${CMAKE_PROJECT_VERSION}" )
