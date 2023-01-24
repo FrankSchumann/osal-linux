@@ -1,6 +1,6 @@
-#include "copa-pdk/component/ComponentController.h"
+#include "ComponentController.h"
 
-#include "copa-pdk/factory/FactoryController.h"
+#include "FactoryController.h"
 
 namespace COPA
 {

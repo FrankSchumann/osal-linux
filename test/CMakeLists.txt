@@ -20,7 +20,7 @@ enable_testing()
 # Create a simple configuration header
 configure_file(config.h.in config.h)
 
-include_directories( "${PROJECT_BINARY_DIR}" "../include" "../src" )
+include_directories( "${PROJECT_BINARY_DIR}" "include" "../include" "../src" )
 
 file( GLOB SOURCES "src/*/*.cpp" "dummy/*/*.cpp" "../src/*/*.cpp" )
 

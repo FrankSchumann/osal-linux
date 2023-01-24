@@ -1,6 +1,6 @@
 #pragma once
 
-#include "copa-pdk/osal/osalinfo/OsalInfoIf.h"
+#include "osalinfo/OsalInfoIf.h"
 
 namespace COPA
 {

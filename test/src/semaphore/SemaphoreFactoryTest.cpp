@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "copa-pdk/osal/semaphore/SemaphoreFactory.h"
+#include "semaphore/SemaphoreFactory.h"
 
 TEST( SemaphoreFactoryTest, Failed )
 {

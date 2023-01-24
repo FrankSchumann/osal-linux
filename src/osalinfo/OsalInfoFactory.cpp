@@ -1,4 +1,4 @@
-#include "copa-pdk/osal/osalinfo/OsalInfoFactory.h"
+#include "osalinfo/OsalInfoFactory.h"
 
 #include "OsalInfo.h"
 

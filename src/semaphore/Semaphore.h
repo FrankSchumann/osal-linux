@@ -1,6 +1,6 @@
 #pragma once
 
-#include "copa-pdk/osal/semaphore/SemaphoreIf.h"
+#include "semaphore/SemaphoreIf.h"
 
 namespace COPA
 {

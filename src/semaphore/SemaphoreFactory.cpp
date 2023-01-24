@@ -1,4 +1,4 @@
-#include "copa-pdk/osal/semaphore/SemaphoreFactory.h"
+#include "semaphore/SemaphoreFactory.h"
 
 #include "Semaphore.h"
 
