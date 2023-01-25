@@ -15,3 +15,10 @@ Install package to Conan cache.
 osal-linux $ conan create . 
 ```
 
+## Git
+Delete all ignored/created files.
+
+```bash
+osal-linux $ git clean -f
+```
+
