@@ -4,7 +4,7 @@ from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 class osalRecipe(ConanFile):
     name = "osal"
-    version = "0.1"
+    version = "0.0.1"
 
     # Optional metadata
     license = "<Put the package license here>"
