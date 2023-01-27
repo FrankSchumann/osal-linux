@@ -2,7 +2,7 @@ cmake_minimum_required( VERSION 3.15 )
 
 # Set some basic project attributes
 project (osal
-		VERSION 0.0.0.2
+		VERSION 0.0.1.2
 		DESCRIPTION "OSAL Linux")
 		
 set( CMAKE_BUILD_TYPE Debug )
