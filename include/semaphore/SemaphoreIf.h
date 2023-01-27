@@ -1,6 +1,6 @@
 #pragma once
 
-namespace COPA
+namespace osal
 {
 class SemaphoreIf
 {

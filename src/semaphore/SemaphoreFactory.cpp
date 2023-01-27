@@ -2,7 +2,7 @@
 
 #include "Semaphore.h"
 
-namespace COPA
+namespace osal
 {
 SemaphoreFactory::SemaphoreFactory()
 {

@@ -1,14 +1,10 @@
-#include "osal.h"
-
-#include "osalinfo/OsalInfoIf.h"
-#include "osalinfo/OsalInfoFactory.h"
-
+#include "Info.h"
 #include "semaphore/SemaphoreFactory.h"
 #include "semaphore/SemaphoreIf.h"
 
-int main() {
-    osal();
+int main()
+{
+    osal::Info::show();
 
-    COPA::OsalInfoFactory osalInfoFactory;
-    COPA::SemaphoreFactory semaphoreFactory;
+    osal::SemaphoreFactory semaphoreFactory;
 }

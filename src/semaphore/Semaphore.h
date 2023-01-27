@@ -2,7 +2,7 @@
 
 #include "semaphore/SemaphoreIf.h"
 
-namespace COPA
+namespace osal
 {
 class Semaphore : public SemaphoreIf
 {

@@ -4,7 +4,7 @@
 
 #include "SemaphoreIf.h"
 
-namespace COPA
+namespace osal
 {
 class SemaphoreFactoryIf
 {
