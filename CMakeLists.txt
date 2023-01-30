@@ -20,6 +20,6 @@ configure_file( config.h.in config.h )
 include_directories( "${PROJECT_BINARY_DIR}" include )
 
 install( TARGETS ${PROJECT_NAME} )
-install( DIRECTORY include/ DESTINATION include )
+install( DIRECTORY include/ DESTINATION include/osal )
 
 message( "CMAKE_PROJECT_VERSION = ${CMAKE_PROJECT_VERSION}" )
