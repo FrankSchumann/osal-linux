@@ -1,7 +1,8 @@
 cmake_minimum_required( VERSION 3.15 )
+
 project(osal-linuxTest
-		VERSION 0.0.0.0
-		DESCRIPTION "OSAL Linux Test")
+        VERSION 0.0.0.0  
+        DESCRIPTION "OSAL Linux Test")
 
 set( CMAKE_CXX_STANDARD 17 )
 
@@ -17,11 +18,14 @@ FetchContent_MakeAvailable( googletest )
 
 enable_testing()
 
-include_directories( "include" "../include" "../src" )
+file( GLOB_RECURSE PROJECT_SOURCE_FILES "src/*.cpp" "../src/*.cpp" )
 
-file( GLOB SOURCES "src/*/*.cpp" "../src/*/*.cpp" )
+add_executable( ${CMAKE_PROJECT_NAME}  ${PROJECT_SOURCE_FILES} )
 
-add_executable( ${CMAKE_PROJECT_NAME}  ${SOURCES} )
+include_directories( "${PROJECT_BINARY_DIR}" include ../include ../src )
+
+# Create a simple configuration header
+configure_file( ../config.h.in config.h )
 
 target_link_libraries(
   ${CMAKE_PROJECT_NAME}
