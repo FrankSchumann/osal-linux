@@ -18,11 +18,11 @@ FetchContent_MakeAvailable( googletest )
 
 enable_testing()
 
-file( GLOB_RECURSE PROJECT_SOURCE_FILES "src/*.cpp" "../src/*.cpp" )
+file( GLOB_RECURSE PROJECT_SOURCE_FILES src/*.cpp ../src/*.cpp )
 
 add_executable( ${CMAKE_PROJECT_NAME}  ${PROJECT_SOURCE_FILES} )
 
-include_directories( "${PROJECT_BINARY_DIR}" include ../include ../src )
+include_directories( ${PROJECT_BINARY_DIR} include ../include ../src )
 
 # Create a simple configuration header
 configure_file( ../config.h.in config.h )
