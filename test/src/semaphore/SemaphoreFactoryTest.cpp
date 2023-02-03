@@ -9,7 +9,7 @@ TEST( SemaphoreFactoryTest, Failed )
 
 TEST( SemaphoreFactoryTest, create )
 {
-    auto const semaphoreFactory = COPA::SemaphoreFactory();
+    auto const semaphoreFactory = osal::SemaphoreFactory();
 
     auto const semaphore = semaphoreFactory.create();
 
