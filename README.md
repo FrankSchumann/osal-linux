@@ -5,8 +5,8 @@ Operating System Abstraction Layer for Linux
 
 ```bash
 osal-linux $ mkdir build && cd build
-osal-linux $ cmake ..
-osal-linux $ cmake --build . 
+osal-linux $ cmake .. -DBUILD_SHARED_LIBS=ON
+osal-linux $ cmake --build . -- -j4
 ```
 ## Conan
 Install package to Conan cache.
