@@ -9,17 +9,30 @@ osal-linux $ cmake .. -DBUILD_SHARED_LIBS=ON
 osal-linux $ cmake --build . -- -j4
 ```
 ## Conan
-Install package to Conan cache.
 
+### Create
+Build and upload package to Conan cache.
+
+#### Release
 ```bash
-osal-linux $ conan create . 
+osal-linux $ conan create .
 ```
+#### Debug
+```bash
+osal-linux $ conan create . -s build_type=Debug
+```
+### Build
 Build package in local directory.
 
+#### Release
 ```bash
 osal-linux $ conan build . 
 ```
 
+#### Debug
+```bash
+osal-linux $ conan build . -s build_type=Debug
+```
 
 ## Git
 Delete all ignored/created files.
