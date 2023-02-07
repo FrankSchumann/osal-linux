@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace COPA
+namespace osal
 {
 Semaphore::Semaphore()
 {

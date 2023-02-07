@@ -1,4 +1,9 @@
 /build/
+*/test_output/
+*/CMakeUserPresets.json
 
 /.project
 /.cproject
+/.settings
+
+/CMakeUserPresets.json

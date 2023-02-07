@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "copa-pdk/osal/semaphore/SemaphoreFactory.h"
+#include "semaphore/SemaphoreFactory.h"
 
 TEST( SemaphoreFactoryTest, Failed )
 {
@@ -9,7 +9,7 @@ TEST( SemaphoreFactoryTest, Failed )
 
 TEST( SemaphoreFactoryTest, create )
 {
-    auto const semaphoreFactory = COPA::SemaphoreFactory();
+    auto const semaphoreFactory = osal::SemaphoreFactory();
 
     auto const semaphore = semaphoreFactory.create();
 
