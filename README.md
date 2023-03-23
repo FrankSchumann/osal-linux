@@ -34,6 +34,23 @@ osal-linux $ conan build .
 osal-linux $ conan build . -s build_type=Debug
 ```
 
+## Test
+Build and execute GoogleTest.
+
+```bash
+osal-linux/test $ mkdir build
+```
+```bash
+osal-linux/test $ cd build
+osal-linux/test/build $ cmake ..
+```
+```bash
+osal-linux/test/build $ cmake --build . -- -j4
+```
+```bash
+osal-linux/test/build $ ./osal-linuxTest
+```
+
 ## Git
 Delete all ignored/created files.
 
